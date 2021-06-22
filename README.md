@@ -19,3 +19,8 @@
   - Create order with date (bread type?)
   - Delete order
   - Update order
+
+
+### Packages
+  - Background images animation of Bread pictures: https://www.npmjs.com/package/react-background-slider
+  - 
