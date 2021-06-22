@@ -1,23 +1,16 @@
-import React, {Component} from 'react';
-var counter_val = 0;
+import React, { useState } from 'react';
 
+function Counter() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
 
-function Counter(props){
-
-    return <>
-        <button onclick={increment}>Increment</button>
-        <h1>Brenden</h1>
-        <button onclick={decrement}>Decrement</button>
-        <h1>{counter_val}</h1>
-    </>
-    
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
 }
-
-function increment(props){
-    counter_val++;
-}
-function decrement(props){
-    counter_val--;
-}
-
 export default Counter
